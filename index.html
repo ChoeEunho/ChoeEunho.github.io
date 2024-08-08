@@ -4,12 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>소개 사이트</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 전체 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 본문 폰트 설정 */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f2f5; /* 페이스북의 배경색 */
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background: #1877f2; /* 페이스북 블루 */
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .profile-img {
+            max-width: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff; /* 프로필 이미지 테두리 */
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* 링크 색상 */
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* 메인 컨텐츠 스타일 */
+        main {
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+            color: #333;
+            border-bottom: 2px solid #1877f2; /* 섹션 제목 하단에 색상 밑줄 */
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .info-list li {
+            background: #fff;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            background: #fff;
+            padding: 1rem 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>안녕하세요! 저는 최은호입니다.</h1>
+            <h1>자기소개서 - 최은호.</h1>
             <img src="다운로드.jpg" alt="증명사진" class="profile-img">
             <nav>
                 <ul>
@@ -25,19 +139,20 @@
             <h2>소개</h2>
             <p>저는 [직업/전문 분야]로 활동하고 있으며, [경력/전문 분야]에 대한 열정을 가지고 있습니다.</p>
             <ul class="info-list">
-                <li>1999.02.07 / 부경대학교 디스플레이 학과 졸업</li>
-                <li>동아리 - 스타피쉬(축구), 어택(테니스)</li>
-                <li>연락처: 010-9556-6177</li>
+                <li>생년월일 - 1999.02.07</li>
+                <li>학력 = 영산고등학교 - 부경대학교(디스플레이 반도체학과) 졸업</li>
                 <li>자격증 - 산업안전기사, 1종 면허, 토스 IM2</li>
-                <li>교육 - 파워반도체 소자 및 패키징 교육 수료, Intel DX 수강 중</li>
+                <li>교육 - 파워 반도체 패키징 트렉, 차세대 전력반도체 소자제조 실습 교육 기본과정, Intel DX 수강 중</li>
             </ul>
         </section>
         <section id="portfolio">
             <h2>포트폴리오</h2>
+            <p>github: <a href="https://github.com/ChoeEunho">https://github.com/ChoeEunho</a></p>
             <p>여기에는 제가 참여한 프로젝트나 작업물의 예시를 소개할 수 있습니다.</p>
         </section>
         <section id="contact">
             <h2>연락처</h2>
+            <p>전화번호 - 01095566177</p>
             <p>이메일: <a href="mailto:example@example.com">example@example.com</a></p>
         </section>
     </main>
@@ -46,7 +161,7 @@
             <p>&copy; 2024 최은호. 모든 권리 보유.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
+
 
